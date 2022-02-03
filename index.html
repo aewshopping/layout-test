@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>The Fabric of Civilisation - Review</title>
+
+    <!-- Load google font of choice -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">  
+    <!-- Load google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+
+    
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://pophist-layout-test.glitch.me/" />
+    <meta
+      name="description"
+      content="Our review of The Fabric of Civilisation - find out what we learned, what we liked, and whatnot. (Together with links to podcast episodes from the author.)"
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta property="og:title" content="The Fabric of Civilisation - Review" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://pophist-layout-test.glitch.me/" />
+    <meta
+      property="og:description"
+      content="Our review of The Fabric of Civilisation - find out what we learned, what we liked, and whatnot. (Together with links to podcast episodes from the author.)"
+    />
+    <meta property="og:site_name" content="Popular history books">
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.global/61237bdb-4b71-446b-b0b2-2fb7fbdb636f/1541617622.02._SCL_.jpg?v=1641900212765"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:alt" content="Book cover">
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- To make sure site points to https secure address -->
+    <script>
+      if (location.protocol != 'https:') {
+        location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+      }
+    </script>
+    
+    <!-- Loads the twemoji script to allow twitter emojis -->    
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>    
+    
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  
+  <body id="my-body" class="light-mode">
+
+
+    <header>
+      <div class="flex-row">
+
+        <a href="https://popularhistorybooks.com/" title="link to home page" target="_blank">
+              <img src="https://cdn.glitch.me/03bbc298-a970-4d7d-9471-7bd17d8d198c/Justinian_logo%20circle.png?v=1639755854916" width="50" height="50">
+        </a>
+        <p class="flex-outer">&nbsp; &nbsp;Popular history books</p>
+
+        <button type="button" title="Cycle through normal, dark and byzantine colour modes" onclick="next_in_array(colorModes, 'my-body')" class="icon-button-lightbg">
+            <span   class="material-icons-outlined md-30">palette</span>
+        </button>        
+        
+
+        <button type="button" id="show-menu" title="show or hide navigation menu" class="icon-button-lightbg test" onclick="toggle_showdetails(id, 'top_collapse')">   
+          <span class="material-icons-outlined md-36">more_horiz</span>
+        </button>
+
+      </div>      
+
+      <nav class="collapser top_menu" id="top_collapse">
+
+          <ul>
+            <li><a href="https://popularhistorybooks.com/">Home</a></li>
+            <li><a href="https://popularhistorybooks.glitch.me/">All books</a></li>
+            <li><a href="https://popularhistorybooks.softr.app/">Reviews</a></li>
+            <li><a href="https://lnns.co/F2dxHuM4TNR">Podcast</a></li>
+            <li><a id="menu-close" href="#" onclick="toggle_showdetails(id, 'top_collapse')">&#10005; close menu</a></li>
+          </ul>
+
+          <div class="social-links-row">            
+                    <div class="flex1"></div>
+                    <a  href="https://www.facebook.com/Popular-history-books-107253478250090">
+                        <svg class="svg-icon" width="36" height="36" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path id="fbook-icon" d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z"></path></svg>
+</a>
+            
+                      <a href="https://twitter.com/PopHistoryBooks">
+                        <svg class="svg-icon" width="36" height="36" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path id="twitter-icon" d="M22.23,5.924c-0.736,0.326-1.527,0.547-2.357,0.646c0.847-0.508,1.498-1.312,1.804-2.27 c-0.793,0.47-1.671,0.812-2.606,0.996C18.324,4.498,17.257,4,16.077,4c-2.266,0-4.103,1.837-4.103,4.103 c0,0.322,0.036,0.635,0.106,0.935C8.67,8.867,5.647,7.234,3.623,4.751C3.27,5.357,3.067,6.062,3.067,6.814 c0,1.424,0.724,2.679,1.825,3.415c-0.673-0.021-1.305-0.206-1.859-0.513c0,0.017,0,0.034,0,0.052c0,1.988,1.414,3.647,3.292,4.023 c-0.344,0.094-0.707,0.144-1.081,0.144c-0.264,0-0.521-0.026-0.772-0.074c0.522,1.63,2.038,2.816,3.833,2.85 c-1.404,1.1-3.174,1.756-5.096,1.756c-0.331,0-0.658-0.019-0.979-0.057c1.816,1.164,3.973,1.843,6.29,1.843 c7.547,0,11.675-6.252,11.675-11.675c0-0.178-0.004-0.355-0.012-0.531C20.985,7.47,21.68,6.747,22.23,5.924z"></path></svg></a>
+                      <a  href="https://www.instagram.com/popularhistorybooks/">
+                        <svg class="svg-icon" width="36" height="36" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path id="instagram-icon" d="M12,4.622c2.403,0,2.688,0.009,3.637,0.052c0.877,0.04,1.354,0.187,1.671,0.31c0.42,0.163,0.72,0.358,1.035,0.673 c0.315,0.315,0.51,0.615,0.673,1.035c0.123,0.317,0.27,0.794,0.31,1.671c0.043,0.949,0.052,1.234,0.052,3.637 s-0.009,2.688-0.052,3.637c-0.04,0.877-0.187,1.354-0.31,1.671c-0.163,0.42-0.358,0.72-0.673,1.035 c-0.315,0.315-0.615,0.51-1.035,0.673c-0.317,0.123-0.794,0.27-1.671,0.31c-0.949,0.043-1.233,0.052-3.637,0.052 s-2.688-0.009-3.637-0.052c-0.877-0.04-1.354-0.187-1.671-0.31c-0.42-0.163-0.72-0.358-1.035-0.673 c-0.315-0.315-0.51-0.615-0.673-1.035c-0.123-0.317-0.27-0.794-0.31-1.671C4.631,14.688,4.622,14.403,4.622,12 s0.009-2.688,0.052-3.637c0.04-0.877,0.187-1.354,0.31-1.671c0.163-0.42,0.358-0.72,0.673-1.035 c0.315-0.315,0.615-0.51,1.035-0.673c0.317-0.123,0.794-0.27,1.671-0.31C9.312,4.631,9.597,4.622,12,4.622 M12,3 C9.556,3,9.249,3.01,8.289,3.054C7.331,3.098,6.677,3.25,6.105,3.472C5.513,3.702,5.011,4.01,4.511,4.511 c-0.5,0.5-0.808,1.002-1.038,1.594C3.25,6.677,3.098,7.331,3.054,8.289C3.01,9.249,3,9.556,3,12c0,2.444,0.01,2.751,0.054,3.711 c0.044,0.958,0.196,1.612,0.418,2.185c0.23,0.592,0.538,1.094,1.038,1.594c0.5,0.5,1.002,0.808,1.594,1.038 c0.572,0.222,1.227,0.375,2.185,0.418C9.249,20.99,9.556,21,12,21s2.751-0.01,3.711-0.054c0.958-0.044,1.612-0.196,2.185-0.418 c0.592-0.23,1.094-0.538,1.594-1.038c0.5-0.5,0.808-1.002,1.038-1.594c0.222-0.572,0.375-1.227,0.418-2.185 C20.99,14.751,21,14.444,21,12s-0.01-2.751-0.054-3.711c-0.044-0.958-0.196-1.612-0.418-2.185c-0.23-0.592-0.538-1.094-1.038-1.594 c-0.5-0.5-1.002-0.808-1.594-1.038c-0.572-0.222-1.227-0.375-2.185-0.418C14.751,3.01,14.444,3,12,3L12,3z M12,7.378 c-2.552,0-4.622,2.069-4.622,4.622S9.448,16.622,12,16.622s4.622-2.069,4.622-4.622S14.552,7.378,12,7.378z M12,15 c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3S13.657,15,12,15z M16.804,6.116c-0.596,0-1.08,0.484-1.08,1.08 s0.484,1.08,1.08,1.08c0.596,0,1.08-0.484,1.08-1.08S17.401,6.116,16.804,6.116z"></path></svg></a>
+                    <div class="flex1"></div>
+                </div>
+        
+      </nav>
+          
+    </header>
+          
+    <section id="heading_section" class="flex-switch">
+
+      <div class="flex-primary">
+        
+          <h5 class="color-accent txt-capital ft-size-small"><span class="ft-size-vlarge">📝</span>Book Review</h5> 
+
+          <h1 id="book-title">The Fabric of Civilisation</h1>
+
+          <h4>How Textiles Made the World</h4>
+
+
+          <p id="book-info-text" class="ft-size-small">Virginia Postrel, November 2020, Yale University Press, 320 pages</p>
+
+          <h5 class="fw-normal ft-size-small fix-children fit-content">--Links and info--<a id="goto-details" href="#book-details-title"><span class="material-icons-outlined md-36">expand_more</span></a></h5>
+        
+          <a id="godown" href="#summary_section">   
+                  <span class="material-icons-outlined md-72">expand_more</span>
+          </a>
+
+      </div>
+      
+      <div class="flex-image">
+        
+          <div class="fix-children">
+            
+            <img class="book_main_image" alt="Front cover of the book" src="https://cdn.glitch.global/61237bdb-4b71-446b-b0b2-2fb7fbdb636f/1541617622.02._SCL_.jpg?v=1641900212765">
+
+            <div class="tag-group">
+              <p class="datapill tag">Global</p>
+              <p class="datapill tag">Middle ages</p>
+              <p class="datapill tag">Cultural history</p>
+            </div>
+
+          </div>
+
+      </div>
+
+    </section>
+    
+
+
+       
+      <section id="summary_section" class="flex-switch stickunder_grid">
+
+        <div class="flex-primary" id="summary_text">
+          <p>
+          The Fabric of Civilisation spins a thread leading from prehistory to the near future, showing the interwoven technologies and developments from different civilisations across the world.</p>
+
+          <p>A great read for anyone interested in textiles, industry or society. Postrel brings into focus the technological developments in textiles: fibres, yarns, cloths and dyeing.</p>
+          
+          <h3 class="fw-normal pad-bottom">
+            &#9733; &#9733; &#9733; &#9733; &#9734;
+          </h3>
+        </div>
+        
+        <div class="flex-secondary">
+          <p class="datapill tag">Review by Jenny Blakeley, 7 December 2021</p>
+        </div>
+        
+       </section> 
+
+      
+    <section id="scrollover">
+       <div id="progress-bar"></div>
+      <div id="article-settings" class="flex-row">
+        
+        <button type="button" title="Share the link to this page" class="icon-button-lightbg share-link flex-outer">
+        <span class="material-icons-outlined md-36">share</span>
+        </button>
+        
+        <button type="button" id="btn-layers-article" title="Toggle layer scrolling effect" onclick="toggle_layer_scroll(id)" class="icon-button-lightbg">
+        
+          <span class="material-icons-outlined md-36">layers</span>
+        </button>
+
+        <button type="button" id="btn-txtsize-article" title="Cycle through normal, bigger and even-bigger text sizes" onclick="cycle_text_size(id)" class="icon-button-lightbg">
+
+          <span class="material-icons-outlined md-36">format_size</span>
+        </button>
+
+        <button type="button" title="Cycle through normal, dark and byzantine colour modes" onclick="next_in_array(colorModes, 'my-body')" class="icon-button-lightbg">
+        
+          <span   class="material-icons-outlined md-36">palette</span>
+        </button>      
+      
+      </div>  
+
+      <article id="main-article" class="normal-text">
+          
+<blockquote>
+<p>Surrounded by textiles, we’re largely oblivious to their existence and the knowledge and efforts embodied in every scrap of fabric.</p>
+<blockquote>
+<p>The Fabric of Civilisation, Virginia Postrel</p>
+</blockquote>
+</blockquote>
+<p>Any visitor to the West Berkshire Museum can see the Newbury Coat, a coat made in 1811 from sheep to finished garment within a day using the technologies at Greenham Mill as the result of a bet between its owner, John Coxton, and Sir John Throckmorton. Coxton was keen to showcase the improvements in his mill machinery, but readers of  <em>The Fabric of Civilisation: How Textiles Changed the World</em>  by Virginia Postrel will realise that the feat also demonstrates millennia of technological advances in sheep breeding, spinning techniques, weaving methods and dyeing.</p>
+<p>As fabric degrades, it hasn’t left behind the archaeological record that ceramics, metals or bones have, but as a result of new methods more information about historical and pre-historical fabrics is becoming available. Postrel draws on this and other sources to tell us about the long history of silk, wool, cotton and linen and the ways which the development of fabric has resulted in other technological and societal developments across the world. The book is split into chapters on fibre, thread, cloth, dye, traders, consumers and innovation.</p>
+<p>The fibre section shows us how some chance and a lot of selective breeding resulted in the forms of cotton, silk, wool and linen that we know today. Sheep have been bred for longer fleeces which can be sheared rather than having to be plucked, cotton has been bred for longer fibres and silkworms have been bred to be resistant to disease, with the mulberry trees used to feed them bred to produce abundant leaves. The production of the fibres also required complicated processes from temperature regulation for silkworms to finicky processes to soften flax fibres. What we think of as “natural” fibres are really no more natural than the UK’s sheep-shorn landscapes.</p>
+<h3>Hanging by a thread</h3>
+<p>Despite spending a lot of my leisure time knitting and sewing, I’d only rarely stopped to think about the incredible amount of thread needed to produce any kind of fabric – and before the Industrial Revolution it was incredibly time consuming to make. For example, a pair of jeans requires 10km of yarn, which would take two weeks to spin on a spinning wheel or 37 days on a Bronze Age spindle whorl. A sail needs 154km of yarn, which would take 211 days on a spinning wheel or 566 days on a spindle whorl. Viking sails took longer to make than the ships they powered.</p>
+<p>Spinning is an example of technology transferring across industries and geographies; it is thought that the spinning wheel, which spun horizontally rather than vertically like the spindles which came before it, is based on technology for extruding silk, and in turn introduced the drive belt.</p>
+<h3>What a tangled web we weave</h3>
+<p>Once the yarn is spun, it has to be woven to form cloth. While plain weaving can be done fairly simply, as soon as patterns are involved it becomes very complicated. As a result, brocades and patterns could be used to show the status of the wearer or owner of the cloth; the patterns were woven into the cloth using supplementary weft threads, and a focus of technological development was speeding this up and making it more easily repeatable – which fed into other industries such as ship building, and later, computer programming.</p>
+<p>For clothing, knitted fabric is beginning to overtake woven fabrics, as it can stretch with body movements and has the potential to be created as a 3D shape, reducing the waste caused by weaving flat fabric and then cutting out the shapes required to make the clothes.</p>
+<h3>Dyed in the wool</h3>
+<p>While fabric had been dyed since pre-historical times, Postrel draws a line between dyeing being carried out in a similar way to cooking up until the eighteenth century, and the discoveries in chemistry from then on which drove development and increased understanding. Demand for new dyes sped up developments in chemistry, with dye innovation leading to innovation in many other industries including pharmaceuticals and plastics.</p>
+<h3>Spinoffs</h3>
+<p>Meanwhile, the trade in textiles (and presumably other things such as metals, grains and spices) led to developments in banking and accountancy, such as bills of exchange and double-entry bookkeeping. Textiles were even used both officially and unofficially as currency, and according to Postrel – who may be biased – provided a more stable monetary system than coins.</p>
+<p>Postrel is excellent at making her readers see commonplace and ubiquitous textiles in a new light.</p>
+<p>Sitting in the lounge as I write, I have a much greater appreciation for all the work and innovation that has gone into the curtains, carpet, sofa coverings and cushions as well as the clothes I’m wearing.</p>
+<p>She’s also very good at showing that the story of the development of textiles is still continuing, with a focus now on sustainability and the environment, automation and the use of software to increase the range of what we can make, and functional textiles with coatings and new fibres to change the way that our clothes behave.</p>
+<h3>Rags to riches?</h3>
+<p>With her focus on technological developments, Postrel can sometimes appear dismissive of the human cost of those developments.</p>
+<p>She seems to suggest that out-of-work home spinners should have appreciated that they might be able to get a factory job: and the new machinery was paving the way for the riches of the future anyway. This is not much consolation for mothers trying to feed their children while the change in technology takes place.</p>
+<p>This is not a major theme of the book, though, which concentrates strongly on the nitty gritty of the technology, rather than social issues.</p>
+<h3>Dyeing by inches</h3>
+<p>The level of detail, particularly in the processes of weaving and dyeing, is impressive but also rather difficult to take in at times. I found myself re-reading certain paragraphs several times, trying to picture what was being described – this possibly goes to show how little concept we have of what goes into fabric production.</p>
+<h3>Conclusion</h3>
+<p><em>The Fabric of Civilisation: How Textiles Changed the World</em>  is a great read for anyone with even the vaguest of interests in textiles, or indeed industry or the development of society in general. It’s a fascinating look at the way that their production and use was already pretty well developed in the distant past, and how that development has continued through the Industrial Revolution and beyond, and is still continuing today.</p>
+
+ 
+
+      
+    <section id="book-details-section">
+
+      <h4 id="book-details-title" class="inline">Book details </h4><a href="#my-body">(back to top)</a>
+
+      <ul>
+        
+        <li>Title - <p class="inline">The Fabric of Civilisation: How Textiles Made the World</p></li>
+        <li>Author - <p class="inline">Virginia Postrel</p></li>
+        <li>Publication date - <p class="inline">10 November 2020</p></li>
+        <li>Publisher - <p class="inline">Hachette</p></li>
+        <li>Pages - <p class="inline">320</p></li>
+        <li>ISBN 13 - <p class="inline">978-1541617629</p></li>
+        <li><span class="material-icons-outlined md-24">podcasts</span>Podcast episode - <p class="inline"><a href="https://www.google.com">History Hit, Episode Title</a></p></li>
+        <li><span class="material-icons-outlined md-24">podcasts</span>Podcast episode - <p class="inline"><a href="https://www.google.com">History Extra, Episode Title</a></p></li>
+        <li><span class="material-icons-outlined md-24">shopping_cart</span>Amazon UK - <p class="inline"><a href="https://www.amazon.co.uk/Fabric-Civilization-Textiles-Made-World/dp/1541617622/">https://www.amazon.co.uk/Fabric-Civilization-Textiles-Made-World/dp/1541617622/</a></p></li>
+        <li><span class="material-icons-outlined md-24">shopping_cart</span>Amazon US - <p class="inline"><a href="https://www.amazon.com/Fabric-Civilization-Textiles-Made-World/dp/1541617622/">https://www.amazon.com/Fabric-Civilization-Textiles-Made-World/dp/1541617622/</a></p></li>
+
+      </ul>   
+      
+    </section>
+    </article>
+        
+    </section> <!--scrollover end - everthing needs to go in here or have positive z index and bg color set manually -->
+    
+    
+    <footer>
+
+      <div class="footer-item">      
+        <a class="margin-bothsides" href="https://www.facebook.com/Popular-history-books-107253478250090"><svg class="svg-icon" width="36" height="36" viewbox="0 0 24 24"><use href="#fbook-icon"/></svg></a>
+        <a class="margin-bothsides" href="https://www.facebook.com/Popular-history-books-107253478250090"><svg class="svg-icon" width="36" height="36" viewbox="0 0 24 24"><use href="#twitter-icon"/></svg></a>
+        <a class="margin-bothsides" href="https://www.facebook.com/Popular-history-books-107253478250090"><svg class="svg-icon" width="36" height="36" viewbox="0 0 24 24"><use href="#instagram-icon"/></svg></a>
+      </div>
+      
+      <div class="flex-row">
+        <p6 class="footer-item">&copy; 2022 PopularHistoryBooks.com
+        </p6>
+
+        <a class="footer-item" href="#my-body">To the top &#8593;
+        </a>
+      </div>
+    </footer>
+
+  </body>
+  
+
+  <script>twemoji.parse(document.body);</script>
+  
+  
+</html>
